@@ -1,4 +1,4 @@
-# HybridFC: A Hybrid approach for fact checking over knowledge graphs
+# HybridFC: A Hybrid Fact-Checking Approach for Knowledge Graphs
 
 ![Screenshot from 2022-07-25 22-22-05](https://user-images.githubusercontent.com/10128056/180878241-bae8b3f6-88da-49ca-97d1-aeb6c0357c83.png)
 
@@ -91,7 +91,7 @@ These files can be uploaded to a live instance of [GERBIL](http://swc2017.aksw.o
 ## Future plan:
 TODO
 ## Acknowledgement 
-TODO
+The work has been supported by the EU H2020 Marie Skłodowska-Curie project KnowGraphs (no. 860801)).
 ## Authors
 TODO
 
