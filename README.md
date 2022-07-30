@@ -2,7 +2,7 @@
 
 ![Screenshot from 2022-07-25 22-22-05](https://user-images.githubusercontent.com/10128056/180878241-bae8b3f6-88da-49ca-97d1-aeb6c0357c83.png)
 
-This open-source project contains the Python implementation of our approach HybridFC. This project is designed to ease real-world applications of fact-checking over knowledge graphs and produce better results. With this aim, we rely on:
+This open-source project contains the Python implementation of our approach [HybridFC](https://papers.dice-research.org/2022/ISWC_HybridFC/public.pdf). This project is designed to ease real-world applications of fact-checking over knowledge graphs and produce better results. With this aim, we rely on:
 
 1. [PytorchLightning](https://www.pytorchlightning.ai/) to perform training via multi-CPUs, GPUs, TPUs or  computing cluster, 
 2. [Pre-trained-KG-embeddings](https://embeddings.cc/) to get pre-trained KG embeddings for knowledge graphs for knowledge graph-based component, 
