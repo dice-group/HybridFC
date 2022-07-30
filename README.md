@@ -89,12 +89,17 @@ After computing evaluation results, the prediction files are saved in the "datas
 These files can be uploaded to a live instance of [GERBIL](http://swc2017.aksw.org/gerbil/config) (by Roder et al.) framework to produce AUROC curve scores.  
 
 ## Future plan:
-TODO
+As future work, we will exploit the modularity of HybridFC by integrating rule-based approaches. We also plan to explore other possibilities to select the best evidence sentences.
+
 ## Acknowledgement 
 The work has been supported by the EU H2020 Marie Skłodowska-Curie project KnowGraphs (no. 860801)).
-## Authors
-TODO
 
+## Authors
+ * [Umair Qudus](https://dice-research.org/UmairQudus) (DICE, Paderborn University) 
+ * [ Michael Röder](https://dice-research.org/MichaelRoeder) (DICE,  Paderborn University) 
+ * [Muhammad Saleem](https://dice-research.org/MuhammadSaleem) (DICE,  Paderborn University) 
+ * [Axel-Cyrille Ngonga Ngomo](https://dice-research.org/AxelCyrilleNgongaNgomo) (DICE,  Paderborn University)
+  
 
 
 
