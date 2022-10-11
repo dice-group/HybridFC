@@ -63,7 +63,7 @@ conda env create -f environment.yml
 
 conda activate hfc2
 
-#If conda command not found: download miniconda from [link](https://docs.conda.io/en/latest/miniconda.html#linux-installers) and set the path: 
+#If conda command not found: download miniconda from (https://docs.conda.io/en/latest/miniconda.html#linux-installers) and set the path: 
 #export PATH=/path-to-conda/miniconda3/bin:$PATH
 
 ```
