@@ -6,10 +6,10 @@ import numpy as np
 from pytorch_lightning.callbacks import EarlyStopping
 
 from sklearn.metrics import accuracy_score, classification_report, precision_score, auc
-import nn_models_TP
-from utils_TP.dataset_classes import StandardDataModule
-from data_TP import Data
-from utils_TP.static_funcs import *
+import nn_models
+from utils.dataset_classes import StandardDataModule
+from data import Data
+from utils.static_funcs import *
 import time
 import torch
 from sklearn.model_selection import KFold
@@ -23,7 +23,7 @@ from pytorch_lightning import Trainer, seed_everything
 seed_everything(42, workers=True)
 
 
-class Execute_TP:
+class Execute:
     def __init__(self, args):
         args = preprocesses_input_args(args)
         sanity_checking_with_arguments(args)
@@ -84,7 +84,7 @@ class Execute_TP:
 
         self.logger.info(f'Total Runtime:{message}')
 
-    def train_and_eval(self) -> nn_models_TP.BaseKGE:
+    def train_and_eval(self) -> nn_models.BaseKGE:
         """
         Training and evaluation procedure
         """

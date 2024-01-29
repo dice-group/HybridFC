@@ -109,7 +109,7 @@ def argparse_default(description=None):
     parser = pl.Trainer.add_argparse_args(argparse.ArgumentParser())
     # Paths.
     parser.add_argument("--dataset_name", type=str, default='factbench')
-    parser.add_argument("--dataset_path", type=str, default='../data_TP/')
+    parser.add_argument("--dataset_path", type=str, default='../data/')
     parser.add_argument("--type", type=str, default='train')
     if description is None:
         return parser.parse_args()
@@ -123,7 +123,7 @@ if __name__ == '__main__':
         dataset = args.dataset_name
     typ = args.type
     dataset_folder = args.dataset_path
-    # dataset_folder = "../data_TP/"
+    # dataset_folder = "../data/"
     # dataset = "favel"
     # typ = "train"
     #

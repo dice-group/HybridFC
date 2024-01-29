@@ -73,7 +73,7 @@ x = np.arange(1900,2022)
 y = np.arange(1900,2022)
 z = year_count
 jj = 1900
-with open("../data_TP/yago3K/orignal_data/"+'year_count.txt', 'w') as f:
+with open("../data/yago3K/orignal_data/"+'year_count.txt', 'w') as f:
     for i in range(len(year_count)):
         f.write(f'{jj} {year_count[i]}\n')
         jj = jj+1

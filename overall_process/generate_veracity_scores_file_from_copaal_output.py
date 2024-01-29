@@ -12,7 +12,7 @@ import csv
 
 
 current_dir = os.getcwd()
-DATA_PATH = os.path.join(current_dir, "data_TP")
+DATA_PATH = os.path.join(current_dir, "data")
 
 def argparse_default(description=None):
     parser = pl.Trainer.add_argparse_args(argparse.ArgumentParser())
@@ -105,7 +105,7 @@ if __name__ == '__main__':
         dataset = args.dataset_name
     typ = args.type
 
-    dataset_path = '../data_TP/'+dataset+'/'
+    dataset_path = '../data/'+dataset+'/'
     sbert_vectorizer = VeracityExtractor()
 
     # Provide the path to your input file

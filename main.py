@@ -1,4 +1,4 @@
-from executer_TP import Execute_TP
+from executer import Execute
 import pytorch_lightning as pl
 import argparse
 import os
@@ -6,12 +6,12 @@ from pytorch_lightning import Trainer, seed_everything
 seed_everything(42, workers=True)
 
 current_dir = os.getcwd()
-DATA_PATH = os.path.join(current_dir,"data_TP")
+DATA_PATH = os.path.join(current_dir,"data")
 
 def argparse_default(description=None):
     parser = pl.Trainer.add_argparse_args(argparse.ArgumentParser())
     # Paths.
-    parser.add_argument("--path_dataset_folder", type=str, default='data_TP/')
+    parser.add_argument("--path_dataset_folder", type=str, default='data/')
 
     parser.add_argument("--storage_path", type=str, default='HYBRID_Storage')
     parser.add_argument("--eval_dataset", type=str, default='FactBench',
@@ -69,7 +69,7 @@ def argparse_default(description=None):
 
 if __name__ == '__main__':
     args = argparse_default()
-    exc = Execute_TP(args)
+    exc = Execute(args)
     exc.start()
 
 

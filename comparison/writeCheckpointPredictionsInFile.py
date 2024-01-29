@@ -1,5 +1,5 @@
-from data_TP import Data
-# from ../data_TP  import Data
+from data import Data
+# from ../data  import Data
 # from embedding_only_approach import Baseline, Baseline3
 import torch.nn as nn
 
@@ -426,10 +426,10 @@ def save_data(dataset, data_dir="", training="test",  scores = [], method="hybri
 # if bpdp:
 #     datasets_class = ["bpdp"]
 # for cls in datasets_class:
-#     path_dataset_folder = '../data_TP/'
+#     path_dataset_folder = '../data/'
 #     method = "emb-only"   # emb-only or hybrid
 #     if bpdp:
-#         path_dataset_folder = '../data_TP/bpdp/'
+#         path_dataset_folder = '../data/bpdp/'
 #         dataset = Data(data_dir=path_dataset_folder, subpath=None, complete_data=complete_data, emb_typ=emb,
 #                        emb_file="../", bpdp_dataset=True)
 #     else:

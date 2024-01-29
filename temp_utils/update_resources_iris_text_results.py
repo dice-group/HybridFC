@@ -272,7 +272,7 @@ if __name__ == '__main__':
     args = argparse_default()
 
     # path_dataset_folder = '../dataset/'
-    dataset_folder = '../data_TP/dbpedia34k/'
+    dataset_folder = '../data/dbpedia34k/'
 
     if args.eval_dataset == "Dbpedia34k":
         se = UpdateResIRIs(data_dir=args.path_dataset_folder)

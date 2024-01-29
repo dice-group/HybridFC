@@ -6,15 +6,15 @@ import pandas as pd
 import pytorch_lightning as pl
 from comparison.writeCheckpointPredictionsInFile import save_data
 from pytorch_lightning import LightningModule
-from main_TP import argparse_default
-from data_TP import Data
+from main import argparse_default
+from data import Data
 import torch
 from datetime import datetime
 
 import numpy as np
 from sklearn.metrics import accuracy_score
 
-from utils_TP.static_funcs import calculate_wilcoxen_score, select_model
+from utils.static_funcs import calculate_wilcoxen_score, select_model
 
 class MyLightningModule(LightningModule):
     def __init__(self, *args, **kwargs):
@@ -101,7 +101,7 @@ def restore_checkpoint(self, model: "pl.LightningModule", ckpt_path: Optional[st
 prop_split = False
 args = argparse_default()
 bpdp_ds = False
-args.path_dataset_folder = 'data_TP/'
+args.path_dataset_folder = 'data/'
 clss = [args.eval_dataset]
 args.subpath = None
 

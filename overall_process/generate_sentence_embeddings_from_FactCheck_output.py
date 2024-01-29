@@ -17,7 +17,7 @@ import numpy as np
 import csv
 
 current_dir = os.getcwd()
-DATA_PATH = os.path.join(current_dir, "data_TP")
+DATA_PATH = os.path.join(current_dir, "data")
 
 def argparse_default(description=None):
     parser = pl.Trainer.add_argparse_args(argparse.ArgumentParser())
@@ -135,11 +135,11 @@ class SBERTVectorizer:
 
 if __name__ == '__main__':
     # Create an instance of SBERTVectorizer
-    # data_TP / factbench / factcheck_output / result_FactCheck_train_FactCheck.txt result_FactCheck_train_FactCheck
+    # data / factbench / factcheck_output / result_FactCheck_train_FactCheck.txt result_FactCheck_train_FactCheck
     args = argparse_default()
     if args.dataset_name!=None:
         dataset = args.dataset_name
-    dataset_path = '../data_TP/'+dataset+'/'
+    dataset_path = '../data/'+dataset+'/'
     typ = args.type
     sbert_vectorizer = SBERTVectorizer()
 

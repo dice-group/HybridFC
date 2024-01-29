@@ -29,15 +29,15 @@ def main():
     dataset_names = ["bpdp","factbench","favel","dbpedia34k"]
     selected_dataset = dataset_names[2]
     dbpb_dataset = False
-    # / home / umair / Documents / pythonProjects / TemporalFC / data_TP / factbench / embeddings
+    # / home / umair / Documents / pythonProjects / TemporalFC / data / factbench / embeddings
     print("start filtering")
-    path = "../data_TP/" + selected_dataset + "/embeddings/" + embedding_type + "/"
+    path = "../data/" + selected_dataset + "/embeddings/" + embedding_type + "/"
 
     if selected_dataset not in dataset_names:
         print("please select an appropriate dataset first")
         raise
-    path_data_train = "../data_TP/"+selected_dataset+"/train/train"
-    path_data_test = "../data_TP/"+selected_dataset+"/test/test"
+    path_data_train = "../data/"+selected_dataset+"/train/train"
+    path_data_test = "../data/"+selected_dataset+"/test/test"
 
 
     entities = set()

@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 
-from nn_models_TP import *
+from nn_models import *
 
 
 class ConEx(BaseKGE):

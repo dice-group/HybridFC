@@ -125,7 +125,7 @@ class FileProcessor:
     def process_file(self):
         with open(self.input_file, 'r') as f:
             lines = f.readlines()
-        with open('../data_TP/dbpedia34k/relations.dict', 'r') as f:
+        with open('../data/dbpedia34k/relations.dict', 'r') as f:
             relations = f.readlines()
         num_relations = (len(relations)+1)*2
         subjects = []
@@ -157,6 +157,6 @@ class FileProcessor:
 
 data_type = ["test","train"]
 for typ in data_type:
-    fp = FileProcessor('../data_TP/dbpedia5/orignal_data/'+typ+'1.txt', '../data_TP/dbpedia5/'+typ+'/'+typ+'1.txt', '../data_TP/dbpedia5/'+typ+'/'+typ+'_with_time_final2.txt', typ)
+    fp = FileProcessor('../data/dbpedia5/orignal_data/'+typ+'1.txt', '../data/dbpedia5/'+typ+'/'+typ+'1.txt', '../data/dbpedia5/'+typ+'/'+typ+'_with_time_final2.txt', typ)
     fp.match_and_update()
 # fp.process_file()

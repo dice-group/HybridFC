@@ -1,6 +1,6 @@
 
 entities = set()
-with open("/data_TP/factbench/all_entities.txt", "r") as file:
+with open("/data/factbench/all_entities.txt", "r") as file:
     for line in file:
         entities.add(line[:-1])
 

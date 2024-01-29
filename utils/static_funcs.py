@@ -5,19 +5,19 @@ from scipy import stats
 import matplotlib.pyplot as plt
 import string
 
-from nn_models_TP.KGE_model import KGEModel
-from nn_models_TP.temporal_full_hybrid_model import TemporalFullHybridModel
-from nn_models_TP.hybrid_fc_model import HybridFCModel
-from nn_models_TP.path_KGE_hybrid_model import PathKGEHybridModel
-from nn_models_TP.path_model import PathModel
-from nn_models_TP.temporal_prediction_model import TemporalPredictionModel
+from nn_models.KGE_model import KGEModel
+from nn_models.temporal_full_hybrid_model import TemporalFullHybridModel
+from nn_models.hybrid_fc_model import HybridFCModel
+from nn_models.path_KGE_hybrid_model import PathKGEHybridModel
+from nn_models.path_model import PathModel
+from nn_models.temporal_prediction_model import TemporalPredictionModel
 
 import pytorch_lightning as pl
 from typing import AnyStr, Tuple
 
-from nn_models_TP.text_KGE_hybrid_model import TextKGEHybridModel
-from nn_models_TP.text_model import TextModel
-from nn_models_TP.text_path_hybrid_model import TextPathHybridModel
+from nn_models.text_KGE_hybrid_model import TextKGEHybridModel
+from nn_models.text_model import TextModel
+from nn_models.text_path_hybrid_model import TextPathHybridModel
 
 
 def calculate_wilcoxen_score(df_data , typ):

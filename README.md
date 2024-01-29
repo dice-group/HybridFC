@@ -31,9 +31,9 @@ download and unzip data and embedding files in the root folder of the project.
 ``` html
 pip install gdown
 
-wget https://files.dice-research.org/datasets/ISWC2023_TemporalFC/data_TP.zip
+wget https://files.dice-research.org/datasets/ISWC2022_HybridFC/data.zip
 
-unzip data_TP.zip
+unzip data.zip
 ``` 
 
 
@@ -59,7 +59,7 @@ JSON format is as follows:
 
 ``` 
 
-Put the result JSON file in the data_TP folder.
+Put the result JSON file in the data folder.
 
 Further details are in the readme file in [overall_process folder](https://github.com/factcheckerr/HybridFC/tree/master/overall_process)
 

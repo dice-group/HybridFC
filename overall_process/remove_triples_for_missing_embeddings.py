@@ -4,12 +4,12 @@ import pandas as pd
 # Step 1: Read embeddings.csv and store entities in a set
 type = 'train'
 data_set = 'factbench'
-embeddings_file_path = '../data_TP/factbench/embeddings/TransE/all_entities_embeddings_final.csv'
+embeddings_file_path = '../data/factbench/embeddings/TransE/all_entities_embeddings_final.csv'
 embeddings_df = pd.read_csv(embeddings_file_path, header=None)
 entities_set = set(embeddings_df[0])
 
 # Step 2: Read train.txt and get all subject and object entities
-train_file_path = '../data_TP/'+data_set+'/'+type+'/'+type
+train_file_path = '../data/'+data_set+'/'+type+'/'+type
 train_df = pd.read_csv(train_file_path, sep='\t', header=None, names=['subject', 'predicate', 'object', 'v','dot'])
 all_entities = set(train_df['subject']).union(set(train_df['object']))
 
