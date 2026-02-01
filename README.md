@@ -98,8 +98,6 @@ python evaluate_checkpoint_model.py --emb_type TransE --model full-Hybrid --num_
 
 4. For different embeddings type(emb_type) or model type(model), you just need to change the parameters. 
 
-5. For differnt embeddings type(emb_type) or model type(model), you just need to change the parameters.
-
 Available embeddings types:
 [ConEx](https://arxiv.org/pdf/2008.03130.pdf), [TransE](https://everest.hds.utc.fr/lib/exe/fetch.php?media=en:cr_paper_nips13.pdf), 
 
